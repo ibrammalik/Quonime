@@ -3,7 +3,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,6 +17,8 @@
 #quote-box {
   background-color: white;
   padding: 20px;
+  width: 50vw;
+  border-radius: 7px;
 }
 
 #text {
@@ -26,7 +29,33 @@
   color: black;
   text-align: right;
 }
+
+#anime {
+  color: black;
+  text-align: left;
+  margin-top: 0;
+}
+
 .group-button {
   display: flex;
   justify-content: space-between;
+}
+
+.button {
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+  background-color: #ff6529;
+  color: white;
+}
+
+#footer {
+  width: 100%;
+  background-color: white;
+}
+
+.shadow {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
