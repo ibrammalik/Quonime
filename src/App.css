@@ -50,12 +50,72 @@
 }
 
 #footer {
+  background-color: rgb(61, 57, 57);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 40px 100px 0px 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer-content {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+  width: 80%;
+}
+
+#logo img {
+  width: 150px;
+}
+
+#credit-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#profile-picture {
+  width: 100px;
+}
+
+#copyright {
+  border-top: black solid 2px;
   width: 100%;
-  background-color: white;
+}
+
+#aboutme-detail {
+  gap: 10px;
 }
 
 .shadow {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.left-align {
+  text-align: left;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.t-decor-none {
+  text-decoration: none;
+}
+
+.color-white {
+  color: white;
 }
