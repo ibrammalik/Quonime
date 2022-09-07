@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/ibrammalik/Quonime">
+    <img src="/repo/asset/images/Logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">Quonime</h3>
 
-## Available Scripts
+  <p align="center">
+    <samp>website for generating quality anime quotes</samp>
+    <br />
+    <a href="https://quonime.vercel.app/"><strong>Visit the website »</strong></a>
+  </p>
+</p>
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+### Preview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<div>
+<img src="/repo/asset/images/Quonime Preview.jpeg">
+<p align="center">website screenshot</p>
+<img src="/repo/asset/videos/Quonime Preview.gif">
+<p align="center">website presentation</p>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `npm test`
+### Techstack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React.js](https://reactjs.org/) - website is built with React
+- [jQuery](https://https.jquery.com/) - website is created in Next
 
-### `npm run build`
+> The Website is hosted on Vercel.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Thanks to
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Rocktim Saikia](https://github.com/rocktimsaikia/anime-chan) - for free Restful API serving quality anime quotes
+- [Freepik](https://www.flaticon.com/authors/freepik) - for free quality Q icon
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### About
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I started Quonime as a fun side project in 2022 because I personally could not find a single API service that provides anime quotes. So I created Animechan but left it halfway due to my internship but the traffic the API received was pretty huge. Also due to recent emails and issues where people kept on telling me to keep the service alive I recently decided to work on it. I recreated the entire API from scratch as the old API was poorly designed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- CONTRIBUTING -->
 
-## Learn More
+### Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- For any bug or feature requests, [Submit a issue here](https://github.com/ibrammalik/Quonime/issues).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Also please see the [open issues](https://github.com/ibrammalik/Quonime/issues) for a list of proposed features before submitting one.
 
-### Code Splitting
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- LICENSE -->
 
-### Analyzing the Bundle Size
+### Copyright
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright © 2022 [ibrammalik](https://github.com/ibrammalik)
