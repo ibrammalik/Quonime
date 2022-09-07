@@ -4,34 +4,50 @@
 
 .App-header {
   /* background-color: #282c34; */
-  background-color: white;
+  background-color: var(--primary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--secondary-color);
+  transition: 0.4s;
 }
 
 #quote-box {
-  background-color: white;
+  background-color: var(--third-color);
   padding: 20px;
   width: 50vw;
   border-radius: 7px;
 }
 
-#text {
-  color: black;
+#quote-box-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mode-toggle {
+  color: lightgrey;
+  padding: 3px;
+}
+
+#mode-toggle:hover {
+  color: yellow;
+  border-radius: 7px;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  cursor: pointer;
 }
 
 #author {
-  color: black;
   text-align: right;
 }
 
 #anime {
-  color: black;
   text-align: left;
   margin-top: 0;
 }
@@ -46,14 +62,17 @@
   border-radius: 7px;
   border: none;
   background-color: #ff6529;
-  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #b9491d;
 }
 
 #footer {
   background-color: rgb(61, 57, 57);
   display: flex;
   flex-direction: column;
-  color: white;
   padding: 40px 100px 0px 100px;
   justify-content: center;
   align-items: center;
@@ -62,19 +81,31 @@
 
 #footer-content {
   display: flex;
-  gap: 2em;
-  justify-content: space-between;
-  width: 80%;
+  gap: 10em;
+  row-gap: 2em;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#logo {
+  max-width: 214px;
 }
 
 #logo img {
   width: 150px;
+  height: 150px;
 }
 
 #credit-container {
   display: flex;
   flex-direction: column;
   text-align: left;
+  max-width: 213px;
+}
+
+#credit-container ul {
+  padding-left: 20px;
 }
 
 #profile-picture {
@@ -118,4 +149,24 @@
 
 .color-white {
   color: white;
+}
+
+.title-text {
+  font-weight: 500;
+  color: #ff6529;
+  margin-bottom: 5px;
+}
+
+.link:hover {
+  color: #ff6529;
+}
+
+@media only screen and (max-width: 600px) {
+  #quote-box {
+    width: 80vw;
+  }
+  #footer {
+    padding: 40px 10px 0px 10px;
+    text-align: center;
+  }
 }
