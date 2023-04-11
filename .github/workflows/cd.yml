@@ -1,24 +1,27 @@
-name: Continuous Deployment
-
-on:
-    push:
-        branches:
-            - main
-
+on: push
+name: 🚀 Deploy website on push
 jobs:
-    deploy:
+    web-deploy:
+        name: 🎉 Deploy
         runs-on: ubuntu-latest
-
         steps:
-            - name: SSH and deploy app
-              uses: appleboy/ssh-action@master
+            - name: 🚚 Get latest code
+              uses: actions/checkout@v3
+
+            - name: Use Node.js 16
+              uses: actions/setup-node@v2
               with:
-                  host: ${{ secrets.SSH_HOST }}
-                  username: ${{ secrets.SSH_USERNAME }}
-                  key: ${{ secrets.SSH_KEY }}
-                  port: ${{ secrets.SSH_PORT }}
-                  script: |
-                      cd /www/wwwroot/quonime.computerscience.my.id
-                      git pull origin main
-                      npm install
-                      npm run build
+                  node-version: "16"
+
+            - name: 🔨 Build Project
+              run: |
+                  npm install
+                  npm run build
+
+            - name: 📂 Sync files
+              uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+              with:
+                  server: ftp.samkirkland.com
+                  username: myFtpUserName
+                  password: ${{ secrets.password }}
+                  local-dir: ./build/
